@@ -33,13 +33,12 @@ class SearchBar extends React.Component {
   updateQueryString() {
     if (this.state.inputVal !== '') {
       hashHistory.push(`/search?q=${this.state.inputVal}`);
-    } else {
-      hashHistory.push('/browse');
-    }
+    } 
   }
 
   handleClick() {
     this.setState({inputVal: ''}, this.updateQueryString);
+    this.hideSearch()
   }
 
   revealSearch() {
@@ -48,13 +47,17 @@ class SearchBar extends React.Component {
     document.getElementsByClassName("inputField")[0].classList.add('placeholderColor');
   }
 
-  searchSlide() {
+  hideSearch() {
+    document.getElementsByClassName("searchBar")[0].classList.remove('revealSearch');
+    document.getElementsByClassName("inputField")[0].placeholder = "Search";
+    document.getElementsByClassName("inputField")[0].classList.remove('placeholderColor');
+  }
+
+  searchSlide(event) {
     let searchbar = document.getElementsByClassName('searchBar')[0];
     let clickedsearch = searchbar.contains(event.target);
     if (!clickedsearch && this.state.inputVal === '') {
-      document.getElementsByClassName("searchBar")[0].classList.remove('revealSearch');
-      document.getElementsByClassName("inputField")[0].placeholder = "Search";
-      document.getElementsByClassName("inputField")[0].classList.remove('placeholderColor');
+     this.hideSearch()
     }
   }
 
@@ -70,7 +73,7 @@ class SearchBar extends React.Component {
           <input onClick={this.revealSearch} className="inputField" value={this.state.inputVal} onChange={this.handleInput} placeholder="Search" />
         </section>
         <div onClick={this.handleClick} className="closeBtn" >
-          <img src='http://www.pauliewax.com/wp-content/uploads/2017/05/multiply.png' />
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586z" fill="currentColor"></path></svg>
         </div>
       </div>
     );
