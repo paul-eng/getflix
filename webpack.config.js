@@ -26,6 +26,7 @@ plugins = plugins.concat(
 
 module.exports = {
   context: __dirname,
+  mode: 'production',
   entry: './frontend/getflix.jsx',
   output: {
     path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
