@@ -1,0 +1,143 @@
+.series {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  transform-origin: center left;
+  transition: transform 500ms ease;
+}
+
+.seriesMedia {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#seriesPlay {
+  position: absolute;
+  color: white;
+  transform: scale(3);
+  left: calc(50% - 6.3px);
+  top: calc(24%);
+  visibility: hidden;
+  transition: color 200ms ease, transform 200ms ease;
+  z-index: 51;
+}
+
+.series:hover #seriesPlay {
+  visibility: visible;
+  color: white;
+  cursor: pointer;
+  z-index: 51;
+}
+
+.series:hover #seriesPlay:hover {
+  transform: scale(3.5);
+  color: red;
+}
+
+.seriesRow #noHover #seriesPlay {
+  top: calc(50% - 8px);
+}
+
+.imageScaler {
+  margin-bottom: 56%;
+}
+
+.seriesImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.seriesInfo {
+  position: absolute;
+  top: 0;
+  margin-top: 31%;
+  margin-left: 5%;
+  white-space: nowrap;
+  max-width: 80%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  color: white;
+  text-shadow: 0px 1px black;
+
+}
+
+.seriesInfo p {
+  margin: 0 0 2% 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .75vw;
+  font-weight: bold;
+  user-select: none;
+  padding: 1px;
+}
+
+.seriesInfo text {
+  display: block;
+  height: 1.25vw;
+  overflow: hidden;
+  font-size: .45vw;
+  user-select: none;
+  white-space: normal;
+}
+
+.series:hover .seriesInfo {
+  opacity: 1;
+}
+
+.fa-angle-down {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-left: calc(50% - 5px);
+  margin-bottom: 6px;
+  transform: scale(4, 2);
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.fa-angle-down:hover {
+  color: #e50914;
+}
+
+
+.series:hover .fa-angle-down {
+  opacity: 1;
+}
+
+.series .fa-caret-down {
+  color: white;
+  position: absolute;
+  margin-bottom: -14px;
+  margin-left: calc(50% - 5px);
+  bottom: 0;
+  display: none;
+}
+
+.seriesBgFade {
+  position:absolute;
+  background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,0) );
+  height: 101%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.series:hover .seriesBgFade {
+  opacity: 1;
+}
+
+.highlightSerie .series {
+  border: 4px solid white;
+  box-sizing: border-box;
+  z-index: 50;
+}
+
+.highlightSerie .fa-caret-down {
+  display: block;
+}

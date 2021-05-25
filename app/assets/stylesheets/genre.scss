@@ -1,0 +1,20 @@
+.genre {
+  height: 100%;
+}
+
+.genre aside {
+  padding: 1px;
+}
+
+.genre p {
+  color: white;
+  font-size: 26px;
+  margin: 107px 0 72px 56px;
+}
+
+.genre #genreRows {
+  margin: 0 auto;
+  width: 93%;
+  display: flex;
+  flex-wrap: wrap;
+}

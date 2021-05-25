@@ -1,0 +1,49 @@
+.landing {
+  position: relative;
+  background-color: black;
+}
+
+.landing img {
+  width: 100%;
+}
+
+.landingBlock {
+  position: absolute;
+  top: 38%;
+  color: white;
+  margin: -50px 0px 0px 57px;
+}
+
+.landingBlock h2 {
+  font-size: 5.5vw;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.landingBlock p {
+  font-size: 1.85vw;
+  margin-bottom: 12px;
+}
+
+.landingBlock button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #e50914;
+  color: white;
+  padding: 12px 28px;
+  margin-right: 22px;
+  border-radius: 2px;
+}
+
+.landingBlock button:hover {
+  background-color: #f40612;
+}
+
+.fa-key {
+  color: white;
+  margin-right: 4px;
+}
+
+.fa-key {
+  transform: scale(.7);
+}
