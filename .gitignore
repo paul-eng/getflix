@@ -17,3 +17,5 @@ node_modules/
 .DS_Store
 npm-debug.log
 .env
+bundle.js
+bundle.js.map
