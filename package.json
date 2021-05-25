@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "start": "webpack"
+    "start": "webpack",
+    "postinstall": "webpack"
   },
   "engines": {
     "node": "6.10.0",
