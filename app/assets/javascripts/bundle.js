@@ -16888,7 +16888,7 @@ var Footer = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'https://github.com/pauliewax/', target: '_blank' },
+                { href: 'https://github.com/paul-eng/', target: '_blank' },
                 'GitHub'
               )
             ),
@@ -16944,7 +16944,7 @@ var Footer = function (_React$Component) {
             ),
             _react2.default.createElement(
               'a',
-              { href: 'https://github.com/pauliewax/', target: '_blank' },
+              { href: 'https://github.com/paul-eng/', target: '_blank' },
               _react2.default.createElement('i', { className: 'fa fa-github' })
             ),
             _react2.default.createElement(
