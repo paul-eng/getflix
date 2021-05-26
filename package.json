@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pauliewax/getflix.git"
+    "url": "git+https://github.com/paul-eng/getflix.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pauliewax/getflix/issues"
+    "url": "https://github.com/paul-eng/getflix/issues"
   },
   "homepage": ".",
   "dependencies": {

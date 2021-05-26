@@ -132,7 +132,7 @@ title: 'The Beach Boys',
 year: '1961',
 mpaa_rating: 'TV-14',
 description: 'The Beach Boys are an American rock band formed in Hawthorne, California in 1961.',
-thumbnail_url: 'http://www.pauliewax.com/wp-content/uploads/2017/04/beachboys.jpg'
+thumbnail_url: 'https://getflix-pro.s3.us-east-2.amazonaws.com/music_beachboys.jpg'
 )
 
 series15 = Series.create(
