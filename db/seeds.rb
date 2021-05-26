@@ -654,7 +654,7 @@ vid24 = Video.create(
   series_id: series14.id,
   episode_num: 1,
   video_url: 'https://s3.us-east-2.amazonaws.com/getflix-pro/beachboys_video.mp4',
-  thumbnail_url: 'http://www.pauliewax.com/wp-content/uploads/2017/04/beachboys.jpg'
+  thumbnail_url: 'https://getflix-pro.s3.us-east-2.amazonaws.com/music_beachboys.jpg'
 )
 
 vid25 = Video.create(
