@@ -16522,7 +16522,6 @@ var App = function App(_ref) {
   var children = _ref.children,
       location = _ref.location;
 
-
   return _react2.default.createElement(
     'div',
     { className: 'app' },
@@ -16897,7 +16896,7 @@ var Footer = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'http://paul-eng.com/', target: '_blank' },
+                { href: 'https://paul-eng.github.io/', target: '_blank' },
                 'Portfolio'
               )
             ),
@@ -16906,7 +16905,7 @@ var Footer = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'http://paul-eng.com/assets/resume.pdf', target: '_blank' },
+                { href: 'https://paul-eng.github.io/assets/paul_eng.pdf', target: '_blank' },
                 'Resume'
               )
             ),
@@ -16949,7 +16948,7 @@ var Footer = function (_React$Component) {
             ),
             _react2.default.createElement(
               'a',
-              { href: 'http://paul-eng.com/', target: '_blank' },
+              { href: 'https://paul-eng.github.io/', target: '_blank' },
               _react2.default.createElement('i', { className: 'fa fa-drivers-license' })
             ),
             _react2.default.createElement(
@@ -16959,7 +16958,7 @@ var Footer = function (_React$Component) {
             ),
             _react2.default.createElement(
               'a',
-              { href: 'http://paul-eng.com/assets/resume.pdf', target: '_blank' },
+              { href: 'https://paul-eng.github.io/assets/paul_eng.pdf', target: '_blank' },
               _react2.default.createElement('i', { className: 'fa fa-file' })
             )
           ),
