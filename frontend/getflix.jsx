@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 
-console.log("test asset compilation2")
-
 document.addEventListener('DOMContentLoaded', () => {
     let store;
     if (window.currentUser) {
