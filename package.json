@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "postinstall": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "engines": {
     "node": "6.10.0",
