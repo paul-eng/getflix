@@ -13,6 +13,7 @@ class NavBar extends React.Component {
   }
 
   componentDidMount() {
+console.log("test asset compilation")
     document.addEventListener('scroll', this.transparencySwitch);
   }
 
