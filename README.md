@@ -13,7 +13,7 @@
 * Search by title
 * Navigate movies, TV series, and episodes
 * Add / remove shows from 'My List' page
-* Custom video controls
+* Video player with custom HTMLMediaElement interface
 
 ## Technical Details
 
@@ -74,7 +74,7 @@ Content in the same row as the currently selected video is pushed to either side
 }
 ```  
 
-[getflix]:  https://getflix-app.herokuapp.com
+[getflix]:  http://www.getflix.cc
 
 [home]: ./docs/images/home.png
 [overview]: ./docs/images/overview.png
